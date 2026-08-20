@@ -8,10 +8,13 @@ def show():
   st.write("IT初心者向けアプリです")
 
   st.subheader("問題文")
+  if "questions" not in st.session_state:
+    st.session_state.questions = []
+
   if "question_data" not in st.session_state:
-    st.session_state.question_data = gemini.create_question(st.session_state.category, st.session_state.difficulty)
-  
-  question_data = st.session_state.question_data 
+    st.session_state.question_data = gemini.create_question(st.session_state.category, st.session_state.difficulty,st.session_state.questions)
+    question_data = st.session_state.question_data
+    st.session_state.questions.append(question_data["question"])
 
   st.write(question_data["question"])
   st.write("")

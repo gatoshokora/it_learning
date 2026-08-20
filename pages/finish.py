@@ -11,5 +11,6 @@ def show():
   if st.button("ホーム画面へ"):
     st.session_state.pop("count", None)
     st.session_state.pop("correct", None)
+    st.session_state.pop("questions", None)
     st.session_state.page = "main"
     st.rerun()

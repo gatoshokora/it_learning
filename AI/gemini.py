@@ -10,7 +10,7 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
-def create_question(category, difficulty):
+def create_question(category, difficulty, questions):
 
   levels = {
     "easy": "初級",
@@ -24,6 +24,7 @@ def create_question(category, difficulty):
     model='gemini-3.5-flash',
     contents=f"""
     {category}の{level}問題を1問出してください。
+    {questions}と重複しない問題にしてください。
 
     以下のJSON形式で返してください。
     answerには正解の選択肢の文字列をそのまま入れてください。
