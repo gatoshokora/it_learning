@@ -52,7 +52,11 @@ IT Learning
     ├── question.py
     ├── result.py
     ├── finish.py
+    ├── register.py
+    ├── regi_confirm.py
+    └── login.py
 ```
+
 ## 認証・セキュリティ
 
 パスワードはデータベースに平文で保存せず、
@@ -113,12 +117,6 @@ app.py でクイズ関連ページへのアクセス時にもログイン状態�
 * ログイン状態による機能制限
 * 未ログインユーザーのクイズ利用制限
 * クイズ関連ページへのアクセス制御
-
-```
-    ├── register.py
-    ├── regi_confirm.py
-    └── login.py
-```
 
 ## 工夫した点
 
