@@ -33,28 +33,28 @@ if st.session_state.page == "main":
   main.show()
 
 elif st.session_state.page == "difficulty":
-  if st.session_state.is_login and st.session_state.user_name:
+  if st.session_state.is_login and st.session_state.log_user_name:
     difficulty.show()
   else:
     st.session_state.page = "main"
     st.rerun()
 
 elif st.session_state.page == "question":
-  if st.session_state.is_login and st.session_state.user_name:
+  if st.session_state.is_login and st.session_state.log_user_name:
     question.show()
   else:
     st.session_state.page = "main"
     st.rerun()
 
 elif st.session_state.page == "result":
-  if st.session_state.is_login and st.session_state.user_name:
+  if st.session_state.is_login and st.session_state.log_user_name:
     result.show()
   else:
     st.session_state.page = "main"
     st.rerun()
 
 elif st.session_state.page == "finish":
-  if st.session_state.is_login and st.session_state.user_name:
+  if st.session_state.is_login and st.session_state.log_user_name:
     finish.show()
   else:
     st.session_state.page = "main"
