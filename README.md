@@ -38,6 +38,28 @@ ITの基礎知識をクイズ形式で学習することを目的として開発
 - Git / GitHub
 - python-dotenv
 
+## 画面一覧
+
+### メイン画面（未ログイン）
+
+![メイン画面（未ログイン）](images/main.png)
+
+### メイン画面（ログイン済み）
+
+![メイン画面（ログイン済み）](images/main_logged_in.png)
+
+### ログイン画面
+
+![ログイン画面](images/login.png)
+
+### クイズ画面
+
+![クイズ画面](images/question.png)
+
+### 結果画面
+
+![結果画面](images/result.png)
+
 ## 起動方法
 
 ### 1. リポジトリをクローン
