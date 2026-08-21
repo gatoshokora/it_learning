@@ -36,13 +36,14 @@ def show():
 
   st.write("IT初心者向けアプリです")
 
-  categories = ["Python", "SQLite", "Git"]
+  if st.session_state.is_login and st.session_state.log_user_name:
+    categories = ["Python", "SQLite", "Git"]
 
-  for category in categories:
-    if st.button(category):
-      st.session_state.page = "difficulty"
-      st.session_state.category = category
-      st.rerun()
+    for category in categories:
+      if st.button(category):
+        st.session_state.page = "difficulty"
+        st.session_state.category = category
+        st.rerun()
 
     
 
