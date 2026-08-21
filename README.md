@@ -41,7 +41,6 @@ ITの基礎知識をクイズ形式で学習することを目的として開発
 ## アプリ構成
 
 ```text
-
 IT Learning
 ├── app.py
 ├── database.py
@@ -53,8 +52,7 @@ IT Learning
     ├── question.py
     ├── result.py
     ├── finish.py
-
-
+```
 ## 認証・セキュリティ
 
 パスワードはデータベースに平文で保存せず、
