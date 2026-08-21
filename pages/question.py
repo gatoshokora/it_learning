@@ -16,6 +16,7 @@ def show():
     question_data = st.session_state.question_data
     st.session_state.questions.append(question_data["question"])
 
+  question_data = st.session_state.question_data
   st.write(question_data["question"])
   st.write("")
 
