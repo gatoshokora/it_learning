@@ -43,8 +43,38 @@ ITの基礎知識をクイズ形式で学習することを目的として開発
 ### 1. リポジトリをクローン
 
 ```bash
-git clone リポジトリのURL
-cd リポジトリ名
+git clone https://github.com/gatoshokora/it_learning/blob/master/README.md
+cd it_learning
+```
+
+### 2. 仮想環境を作成
+```bash
+python -m venv .venv
+```
+
+### 3. 仮想環境を有効化
+```bash
+.venv\Scripts\Activate.ps1
+```
+
+### 4. 必要なライブラリをインストール
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Gemini APIキーを設定
+
+プロジェクト直下に .env ファイルを作成し、以下を記述します。
+
+```text
+GEMINI_API_KEY=あなたのAPIキー
+```
+
+### 6. アプリを起動
+
+```bash
+streamlit run app.py
 ```
 
 ## アプリ構成
